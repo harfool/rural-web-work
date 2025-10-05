@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Rural Web Work",
-  description: "Rural Web Work | Home",
+  description: "Rural Web Work is a web development company.",
 };
 
 export default function RootLayout({
