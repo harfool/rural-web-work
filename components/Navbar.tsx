@@ -44,9 +44,9 @@ export default function Navbar() {
             className="flex items-center"
           >
             <Image
-              src="/images/logo3.png"
+              src="/images/logo5.png"
               alt="Growify India Logo"
-              width={144}
+              width={120}
               height={42}
               className="object-contain align-middle drop-shadow-sm"
               priority
