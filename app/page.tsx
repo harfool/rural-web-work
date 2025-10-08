@@ -1,11 +1,15 @@
+"use client";
+
+import Hero from "@/components/Hero";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import WorkProcess from "@/components/WorkProcess";
+
 export default function Home() {
   return (
-    <div className="h-screen flex justify-center items-center text-7xl font-extrabold">
-      <h1>
-        <span className="text-[#FF671F]">Rural</span>
-        <span className="text-[#FFFFFF]">Web</span>
-        <span className="text-[#046A38]">Work</span>
-      </h1>
-    </div>
+    <main className="min-h-screen bg-gray-100">
+      <Hero />
+      <WhyChooseUs />
+      <WorkProcess />
+    </main>
   );
 }
