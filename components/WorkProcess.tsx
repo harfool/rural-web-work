@@ -132,7 +132,6 @@ const WorkProcess = () => {
             >
               <div className="flex-1 relative">
                 <div className="relative">
-                  {/* Step Number */}
                   <div
                     className={`absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center shadow-lg z-10`}
                   >

@@ -57,7 +57,6 @@ const WhyChooseUs = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-white via-gray-50 to-white overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-x-hidden w-full">
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       </div>
@@ -95,7 +94,6 @@ const WhyChooseUs = () => {
               )} h-full w-full`}
             >
               <div className="h-full p-5 lg:p-6 rounded-xl border border-gray-200 bg-white/80 backdrop-blur-md transition-all duration-300 hover:bg-gradient-to-br hover:from-orange-50 hover:to-green-50 hover:border-orange-200 hover:shadow-lg hover:shadow-orange-500/10 overflow-hidden text-gray-800 w-full">
-                {/* Gradient Border Effect on Hover */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-500 to-green-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
 
                 <div className="flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 mb-4 rounded-lg bg-gray-100 border border-gray-200 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-green-600 group-hover:scale-110">
@@ -112,14 +110,12 @@ const WhyChooseUs = () => {
                   {highlight.description}
                 </p>
 
-                {/* Hover Gradient Bottom Border */}
                 <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-gradient-to-r from-orange-500 to-green-600 transition-all duration-300 group-hover:w-full"></div>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Additional Trust Elements */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
