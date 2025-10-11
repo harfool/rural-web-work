@@ -93,14 +93,12 @@ const WorkProcess = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-orange-100 to-green-100 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-100 to-purple-100 rounded-full blur-3xl opacity-50"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -120,7 +118,6 @@ const WorkProcess = () => {
           </p>
         </motion.div>
 
-        {/* Process Steps */}
         <div className="space-y-12">
           {processSteps.map((step, index) => (
             <motion.div
@@ -133,10 +130,8 @@ const WorkProcess = () => {
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               } gap-8 lg:gap-12 items-center`}
             >
-              {/* Visual Section */}
               <div className="flex-1 relative">
                 <div className="relative">
-                  {/* Step Number */}
                   <div
                     className={`absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center shadow-lg z-10`}
                   >
@@ -145,7 +140,6 @@ const WorkProcess = () => {
                     </span>
                   </div>
 
-                  {/* Icon Card */}
                   <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
                     <div
                       className={`w-20 h-20 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}
@@ -157,7 +151,6 @@ const WorkProcess = () => {
                       {step.title}
                     </h3>
 
-                    {/* Activities List */}
                     <div className="space-y-2">
                       {step.activities.map((activity, activityIndex) => (
                         <motion.div
@@ -176,7 +169,6 @@ const WorkProcess = () => {
                     </div>
                   </div>
 
-                  {/* Connecting Line (except for last step) */}
                   {index < processSteps.length - 1 && (
                     <div className="hidden lg:block absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-gradient-to-b from-gray-300 to-transparent">
                       <motion.div
@@ -190,7 +182,6 @@ const WorkProcess = () => {
                 </div>
               </div>
 
-              {/* Content Section */}
               <div className="flex-1">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -215,7 +206,6 @@ const WorkProcess = () => {
                     {step.description}
                   </p>
 
-                  {/* Trust Indicators */}
                   <div className="flex flex-wrap gap-4 pt-4">
                     <div className="flex items-center gap-2 text-sm text-gray-500">
                       <Icon icon="lucide:clock" className="w-4 h-4" />
@@ -236,7 +226,6 @@ const WorkProcess = () => {
           ))}
         </div>
 
-        {/* Process Summary */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

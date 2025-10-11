@@ -15,37 +15,31 @@ import {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-orange-50/30 to-green-50/30">
-      {/* Visionary Background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Global Impact Elements */}
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-orange-500 rounded-full animate-pulse">
           <div className="absolute inset-0 bg-orange-500 rounded-full animate-ping" />
         </div>
         <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-green-500 rounded-full animate-pulse delay-1000" />
         <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse delay-500" />
 
-        {/* World Map Inspiration */}
         <div className="absolute inset-0 opacity-[0.02]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
             <Globe className="w-full h-full text-gray-900" />
           </div>
         </div>
 
-        {/* Gradient Orbs */}
         <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-orange-400/10 to-green-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-green-400/10 to-orange-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Content - Vision & Mission */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left space-y-8"
           >
-            {/* Vision Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -60,7 +54,6 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* Main Heading with Vision */}
             <div className="space-y-6">
               <motion.h1
                 initial={{ opacity: 0, y: 25 }}
@@ -91,7 +84,6 @@ export default function Hero() {
               </motion.p>
             </div>
 
-            {/* Core Values */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -135,7 +127,6 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            {/* CTA with Purpose */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -157,7 +148,6 @@ export default function Hero() {
               </Button>
             </motion.div>
 
-            {/* Trust Building Statement */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -172,16 +162,13 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Vision Illustration */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center items-center"
           >
-            {/* Vision Story Container */}
             <div className="relative max-w-lg w-full space-y-6">
-              {/* Main Vision Card */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -189,7 +176,6 @@ export default function Hero() {
                 className="relative rounded-2xl overflow-hidden bg-white/80 backdrop-blur-md border border-white/50 shadow-2xl p-8"
               >
                 <div className="text-center space-y-6">
-                  {/* Vision Icon */}
                   <div className="relative">
                     <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                       <Globe className="w-10 h-10 text-white" />
@@ -205,7 +191,6 @@ export default function Hero() {
                     />
                   </div>
 
-                  {/* Vision Statement */}
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-gray-900">
                       Our Vision
@@ -217,7 +202,6 @@ export default function Hero() {
                     </p>
                   </div>
 
-                  {/* Impact Areas */}
                   <div className="grid grid-cols-2 gap-4 pt-4">
                     {[
                       { label: "Local Impact", value: "India First" },
@@ -241,7 +225,6 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Floating Impact Cards */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -292,7 +275,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll for Mission */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
